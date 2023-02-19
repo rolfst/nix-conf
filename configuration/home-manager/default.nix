@@ -5,7 +5,7 @@
   home-manager.useGlobalPkgs = true;
   # home-manager.useUserPackages = true;
 
-  home-manager.users.sybrand = import ./home.nix;
+  home-manager.users.rolfst = import ./home.nix;
 
   # Use .profile used by home-manager
   environment.loginShellInit = ''

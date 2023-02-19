@@ -1,5 +1,5 @@
 [fonts]
-fonts = [ "source-code-pro", "font-awesome_5", "font-awesome_4" ]
+fonts = [ "source-code-pro", "font-awesome_5", "font-awesome_4", "CascaydiaCode" ]
 
 [fonts.fontconfig.defaultFonts]
 monospace = [ "Source Code Pro" ]

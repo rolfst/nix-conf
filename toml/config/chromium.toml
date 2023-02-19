@@ -13,13 +13,13 @@ extensions = [
 # See policies here: https://chromeenterprise.google/policies/
 [programs.chromium.extraOpts]
 RestoreOnStartup = 1 # Restore previous session on startup
-URLBlocklist = [
-    "youtube.com",
-    "nos.nl",
-    "bbc.com",
-    "reddit.com",
-    "arstechnica.com"
-]
+# URLBlocklist = [
+#     "youtube.com",
+#     "nos.nl",
+#     "bbc.com",
+#     "reddit.com",
+#     "arstechnica.com"
+# ]
 
 # Privacy
 SyncDisabled = true

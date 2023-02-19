@@ -125,6 +125,12 @@
         modules = [ ./hosts/desktop/main.nix sharedModule ];
       };
 
+      nixosConfigurations.vm = nixpkgs.lib.nixosSystem {
+        inherit specialArgs system;
+
+        modules = [ ./hosts/vm/main.nix sharedModule ];
+      };
+
       nixosConfigurations.test-vm = nixpkgs.lib.nixosSystem {
         inherit specialArgs system;
 

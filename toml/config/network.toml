@@ -13,7 +13,7 @@ networkmanager.enable = true
 
 # Use StevenBlack's blocklist:
 # https://github.com/StevenBlack/hosts
-stevenBlackHosts.enable = true
+# stevenBlackHosts.enable = true
 
 # The global useDHCP flag is deprecated, therefore explicitly set to false here.
 # Per-interface useDHCP will be mandatory in the future, so this generated config
@@ -24,20 +24,20 @@ useDHCP = false
 [services.tailscale]
 enable = true
 
-[services.openvpn.servers.radboud]
-# TODO: Fix systemd captures stdin so inputting username/password is impossible
-autoStart = false
-config = '''
-client
-proto tcp
-dev tun
-ca /etc/ssl/certs/ca-bundle.crt
-remote-cert-tls server
-auth-user-pass
-cipher AES-256-CBC
-verify-x509-name openvpn.science.ru.nl name
-auth SHA256
-comp-lzo
-verb 3
-remote openvpn.science.ru.nl 443
-'''
+# [services.openvpn.servers.radboud]
+# # TODO: Fix systemd captures stdin so inputting username/password is impossible
+# autoStart = false
+# config = '''
+# client
+# proto tcp
+# dev tun
+# ca /etc/ssl/certs/ca-bundle.crt
+# remote-cert-tls server
+# auth-user-pass
+# cipher AES-256-CBC
+# verify-x509-name openvpn.science.ru.nl name
+# auth SHA256
+# comp-lzo
+# verb 3
+# remote openvpn.science.ru.nl 443
+# '''

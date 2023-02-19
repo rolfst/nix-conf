@@ -18,15 +18,15 @@ packages = [
     "man-pages",
 
     # Personal development
-    "wezterm",
-    "zeal",
-    "tokei",
+    # "wezterm",
+    # "zeal",
+    # "tokei",
     "nixpkgs-review",
 
     # Personal choices
-    "lf",
-    "st",
-    "yadm",
+    # "lf",
+    # "st",
+    # "yadm",
 
     # Rust coreutils
     "lsd",
@@ -34,6 +34,7 @@ packages = [
     "ripgrep",
     "fd",
     "du-dust",
+    "exa",
 
     # Fluff
     "neofetch",
@@ -44,9 +45,9 @@ packages = [
     "toipe",
 
     # Relaxing
-    "ytfzf",
-    "newsboat",
-    "cider",
+    # "ytfzf",
+    # "newsboat",
+    # "cider",
 
     # Utilities for UX
     "xorg.xrandr",
@@ -60,8 +61,6 @@ packages = [
     "poppler_utils",
     "file",
     "mediainfo",
-    "massren",
-    "chafa",
 
     # Hardware debugging utilities
     "pciutils",
@@ -90,16 +89,11 @@ packages = [
 
     # Productivity
     "thunderbird",
-    "obsidian",
-    "texlive.combined.scheme-full",
     "pandoc",
-    "anki",
     "unzip",
     "libreoffice",
-    "mendeley",
 
     # CLI productivity
-    "imagemagick",
     "ffmpeg",
 
     # Mathematics and other study-related program

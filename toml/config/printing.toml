@@ -2,9 +2,9 @@
 # enable = true
 drivers = [
   # Contains many drivers
-  "gutenprintBin",
-  "gutenprint",
+  # "gutenprintBin",
+  # "gutenprint",
 
   # Drivers for the LBP612C/613C
-  "canon-cups-ufr2",
+  # "canon-cups-ufr2",
 ]
