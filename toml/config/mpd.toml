@@ -7,7 +7,7 @@ enable = true
 
 # Use personal music directory
 # Requires read acces on music directory itself and execute priviliges on parent directories.
-# chmod 710 /home/sybrand
+# chmod 710 /home/rolfst
 # FIXME: TODO: find better way
 musicDirectory = "/home/rolfst/Media/Music"
 playlistDirectory = "/home/rolfst/Media/Music/Playlists"

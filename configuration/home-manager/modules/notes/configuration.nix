@@ -3,7 +3,7 @@
 with lib;
 with builtins;
 
-let notes_path = "/home/sybrand/Notities/Zettelkasten";
+let notes_path = "/home/rolfst/Notities/Zettelkasten";
 in {
   imports = [ ../neovim/modules/base.nix ../neovim/modules/visual/colourscheme.nix ] ++ [ ./compe.nix ];
 

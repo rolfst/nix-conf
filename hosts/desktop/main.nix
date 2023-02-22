@@ -3,7 +3,7 @@
 {
   imports = [
     ./brightness.nix
-    ./syncthing.nix
+    # ./syncthing.nix
     ./hardware-configuration.nix
     ./sleep.nix
   ];
@@ -30,7 +30,7 @@
   # services.zfs.trim.enable = true;
 
   # Virtualbox
-  users.extraGroups.vboxusers.members = [ "sybrand" ];
+  users.extraGroups.vboxusers.members = [ "rolfst" ];
   virtualisation.virtualbox.host.enable = true;
 
   # Get Xserver working
@@ -54,7 +54,7 @@
 
   # Block distracting websites
   blacklist_ip.distractions.blockedSites = [
-    "reddit.com"
+    # "reddit.com"
     # "youtube.com"
     "nos.nl"
     "bbc.com"
@@ -62,7 +62,7 @@
   ];
 
   # Watch yt on a bigger screen
-  home-manager.users.sybrand.programs.mpv.config = {
+  home-manager.users.rolfst.programs.mpv.config = {
     ytdl-format = "bestvideo[height<=1440]+bestaudio";
     sub-font-size = 40;
     vo = lib.mkForce "vdpau"; # Workaround for `gpu` variant crashing

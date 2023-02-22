@@ -17,7 +17,7 @@ latitude = 52.083333
 longitude = 5.116667
 ```
 This reads basically like a NixOS module!
-It does (IMHO) have some readability benefits however because of [TOML tables](https://toml.io/en/v1.0.0#table) which allow for quick and elegant access to long options like `users.users.sybrand`.
+It does (IMHO) have some readability benefits however because of [TOML tables](https://toml.io/en/v1.0.0#table) which allow for quick and elegant access to long options like `users.users.rolfst`.
 It also gives me some peace of mind as I can worry less about these modules because they are *simple* and can't have crazy Turing-complete interactions with everything (although the options they enable still can).
 
 ## Pkgs

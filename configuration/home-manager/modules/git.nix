@@ -4,8 +4,8 @@
   programs.git = {
     enable = true;
 
-    userName = "Sybrand Aarnoutse";
-    userEmail = "sybrand@neuralcoding.com";
+    userName = "Rolf Strijdhorst";
+    userEmail = "rolfst@gmail.com";
 
     delta = {
       enable = true;

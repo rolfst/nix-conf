@@ -3,7 +3,7 @@
 let
   emailBase = address: {
     inherit address;
-    realName = "Sybrand Aarnoutse";
+    realName = "Rolf Strijdhorst";
     passwordCommand = "pass show mail/${address}";
 
     notmuch.enable = true;
@@ -18,16 +18,9 @@ let
   gmailBase = address: emailBase address // { flavor = "gmail.com"; };
 in {
   accounts.email.accounts = {
-    neuralcoding = emailBase "sybrand@neuralcoding.com" // {
-      primary = true;
 
-      userName = "sybrand@neuralcoding.com";
-      smtp = { host = "mail3.sohosted.com"; };
-      imap = { host = "mail3.sohosted.com"; };
-    };
-
-    gmail = gmailBase "sybrandaarnoutse@gmail.com";
-    spam = gmailBase "sybrand.s.y.b@gmail.com" // { realName = "Sybrand"; };
+    gmail = gmailBase "rolfst@jobiroxa.com";
+    spam = gmailBase "rolfst@gmail.com" // { realName = "Rolf"; };
 
     # https://wiki.icis-intra.cs.ru.nl/Email#Local_Email_client_using_IMAP.2FSMTP
     # radboud = emailBase "sybrand.aarnoutse@student.ru.nl" // {
@@ -43,17 +36,18 @@ in {
       # };
     # };
 
-    science = emailBase "sybrandaarnoutse@science.ru.nl" // {
-      userName = "sybrandaarnoutse";
-      passwordCommand = "pass show radboud/science-account";
+    # TODO set jobiroxa mail
+    # science = emailBase "sybrandaarnoutse@science.ru.nl" // {
+    #   userName = "sybrandaarnoutse";
+    #   passwordCommand = "pass show radboud/science-account";
 
-      smtp = {
-        host = "smtp.science.ru.nl";
-        port = 25;
-        tls.useStartTls = true;
-      };
-      imap = { host = "post.science.ru.nl"; };
-    };
+    #   smtp = {
+    #     host = "smtp.science.ru.nl";
+    #     port = 25;
+    #     tls.useStartTls = true;
+    #   };
+    #   imap = { host = "post.science.ru.nl"; };
+    # };
   };
 
   # TUI viewer
@@ -87,7 +81,7 @@ in {
     enable = true;
 
     pollScript = ''
-      export NOTMUCH_CONFIG=/home/sybrand/.config/notmuch/notmuchrc
+      export NOTMUCH_CONFIG=/home/rolfst/.config/notmuch/notmuchrc
 
       mbsync -a
       notmuch new
@@ -95,7 +89,7 @@ in {
 
     # https://github.com/astroidmail/astroid/wiki/Configuration-Reference
     extraConfig = {
-      astroid.notmuch_config = "/home/sybrand/.config/notmuch/notmuchrc";
+      astroid.notmuch_config = "/home/rolfst/.config/notmuch/notmuchrc";
       astroid.hints.level = -1;
 
       # TODO: setup vim to write mails
@@ -140,7 +134,7 @@ in {
     '';
   };
   home.sessionVariables."NOTMUCH_CONFIG" =
-    "/home/sybrand/.config/notmuch/notmuchrc";
+    "/home/rolfst/.config/notmuch/notmuchrc";
 
   # For downloading mail
   # TODO: fix errors

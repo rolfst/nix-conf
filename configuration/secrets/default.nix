@@ -9,7 +9,7 @@ in {
   sops.defaultSopsFile = secrets + "/secrets.yaml";
 
   # Allow user to read keys
-  users.users.sybrand.extraGroups = [ config.users.groups.keys.name ];
+  users.users.rolfst.extraGroups = [ config.users.groups.keys.name ];
 
   sops.secrets.freedns = { };
   sops.secrets.desktop-ssh-key = {
