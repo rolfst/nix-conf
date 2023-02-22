@@ -37,7 +37,7 @@
 
   networking = {
     useDHCP = false;                        # Deprecated
-    hostName = "vm";
+    hostName = "nixos-vm";
     interfaces = {
       enp1s0.useDHCP = true;
     };
