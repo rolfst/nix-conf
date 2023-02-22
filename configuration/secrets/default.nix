@@ -2,7 +2,7 @@
 
 let
   # secretsPath = /secrets/nixos-configuration/secrets;
-  user = config.users.users.sybrand.name;
+  user = config.users.users.rolfst.name;
 in {
   sops.validateSopsFiles = false;
 

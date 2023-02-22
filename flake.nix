@@ -36,11 +36,12 @@
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    secrets = {
-      # Private repository (and encrypted, I'm not that careless)
-      url = "git+https://github.com/syberant/secrets.git";
-      flake = false;
-    };
+    # TODO enable secrets when I figured it out agoin
+    # secrets = {
+    #   # Private repository (and encrypted, I'm not that careless)
+    #   url = "git+https://github.com/rolfst/secrets.git";
+    #   flake = false;
+    # };
 
     # Misc
     flake-utils.url = "github:numtide/flake-utils";
@@ -48,13 +49,13 @@
   };
 
   outputs = { self, nixpkgs, nixpkgs-git, nixos-hardware, NUR, home-manager
-    , sops-nix, xmonad-sybrand, nix-neovim, secrets, flake-utils, hosts }:
+    , sops-nix, xmonad-sybrand, nix-neovim, flake-utils, hosts }: # TODO add secrets
 
     let
       # TODO: utilise flake-utils for this
       system = "x86_64-linux";
       specialArgs = {
-        inherit self nixos-hardware nix-neovim secrets;
+        inherit self nixos-hardware nix-neovim; # secrets
 
         pkgs = import nixpkgs {
           inherit system;
