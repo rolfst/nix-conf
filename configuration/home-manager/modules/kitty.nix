@@ -3,9 +3,9 @@
   
   programs.kitty = {
     enable = true;
-    extraConfig = ''
-      include theme.conf
-    '';
+    # extraConfig = ''
+    #  include theme.conf
+    # '';
     font = {
       name = "Iosevka Term";
       # package = (pkgs.nerdfonts.override {fonts = ["Iosevka"]; });
@@ -26,8 +26,8 @@
       window_border_width = 0;
     };
   };
-  xdg.configFile."kitty/theme.conf".source = pkgs.fetcurl {
-    url = "https://raw.githubusercontent.com/rose-pine/kitty/main/dist/rose-pine.conf";
-    sha = "0000000000000000000000000000000000000000000000000000";
-  };
+  # xdg.configFile."kitty/theme.conf".source = pkgs.fetcurl {
+  #  url = "https://raw.githubusercontent.com/rose-pine/kitty/main/dist/rose-pine.conf";
+  #  sha = "0000000000000000000000000000000000000000000000000000";
+  # };
 }
