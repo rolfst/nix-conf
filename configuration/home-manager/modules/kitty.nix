@@ -7,8 +7,8 @@
       include theme.conf
     '';
     font = {
-      name = "Caskadia Cove";
-      pakage = (pkgs.nerdfonts.override {fonts = ["CascadiaCode"]; });
+      name = "Iosevka Term";
+      # package = (pkgs.nerdfonts.override {fonts = ["Iosevka"]; });
     };
     keybindings = {
       "kitty_mod+enter" = "new_window_with_cmd";
